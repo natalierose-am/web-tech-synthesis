@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aurelia Properties</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+    <h2>AURELIA PROPERTIES</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+    <main>
+        <section id="home">
+            <h1>Exceptional homes.<br>Inspired living.</h1>
+            <p>Discover your next home with Aurelia Properties.</p>
+            <a class="button" href="#properties">Explore Properties</a>
+        </section>
+
+        <section id="properties">
+            <h2>Our Collection</h2>
+            <p>Find a home that suits your lifestyle.</p>
+
+            <div class="collection">
+                <article class="property">
+                    <img src="villa.jpg" alt="Modern luxury villa">
+
+                    <div class="information">
+                        <p class="location">Cantonments, Accra</p>
+                        <h3>The Palm Residence</h3>
+                        <p>5 bedrooms · 5 bathrooms</p>
+                        <p><strong>GHS 8,500,000</strong></p>
+
+                        <button onclick="showDetails('villa-details')">
+                            View Details
+                        </button>
+
+                        <p class="details" id="villa-details">
+                            A spacious villa with a private pool,
+                            a garden, and an outdoor terrace.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="property">
+                    <img src="penthouse.jpg" alt="Bright modern interior">
+
+                    <div class="information">
+                        <p class="location">Airport Residential, Accra</p>
+                        <h3>Skyline Penthouse</h3>
+                        <p>3 bedrooms · 3 bathrooms</p>
+                        <p><strong>GHS 6,900,000</strong></p>
+
+                        <button onclick="showDetails('penthouse-details')">
+                            View Details
+                        </button>
+
+                        <p class="details" id="penthouse-details">
+                            An elegant penthouse with an open living
+                            area, large windows, and a private terrace.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="property">
+                    <img src="garden.jpg" alt="Contemporary family home">
+
+                    <div class="information">
+                        <p class="location">East Legon, Accra</p>
+                        <h3>The Garden House</h3>
+                        <p>4 bedrooms · 4 bathrooms</p>
+                        <p><strong>GHS 4,800,000</strong></p>
+
+                        <button onclick="showDetails('garden-details')">
+                            View Details
+                        </button>
+
+                        <p class="details" id="garden-details">
+                            A welcoming family home with a garden,
+                            a modern kitchen, and a covered patio.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="note">
+                Sample listings and prices for this student project.
+                Images are illustrative.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Find Your Place</h2>
+            <p>Tell us about the home you are looking for.</p>
+
+            <form onsubmit="return false">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="interest">Property of interest</label>
+                <select id="interest" name="interest">
+                    <option>The Palm Residence</option>
+                    <option>Skyline Penthouse</option>
+                    <option>The Garden House</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Check Enquiry</button>
+
+                <p class="note">
+                    Demo form: checks required fields but does not send information.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Aurelia Properties · Exceptional homes. Inspired living.</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    background-color: #f6f4ee;
+    color: #252b27;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #9b7840;
+}
+
+nav a {
+    margin-left: 18px;
+    color: #656a62;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #9b7840;
+}
+
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+
+section {
+    padding: 50px 6%;
+}
+
+#home {
+    padding: 100px 6%;
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#home h1 {
+    max-width: 550px;
+    margin: 0;
+    padding: 20px;
+    background-color: #252b27;
+    font-size: 52px;
+}
+
+#home p {
+    display: inline-block;
+    padding: 12px;
+    background-color: #252b27;
+}
+
+.button, button {
+    display: inline-block;
+    padding: 13px 20px;
+    border: none;
+    background-color: #9b7840;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#home .button {
+    display: block;
+    width: fit-content;
+}
+
+.button:hover, button:hover {
+    background-color: #755a30;
+}
+
+section h2 {
+    font-size: 36px;
+}
+
+.collection {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.property {
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.property img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.information {
+    padding: 20px;
+}
+
+.information h3 {
+    font-size: 25px;
+}
+
+.location {
+    color: #9b7840;
+    font-size: 13px;
+}
+
+.details {
+    display: none;
+    line-height: 1.6;
+}
+
+.note {
+    margin-top: 25px;
+    color: #656a62;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+#contact {
+    background-color: #e9e8df;
+}
+
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input, select, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    border: 1px solid #c7c7bd;
+    background-color: white;
+    font: inherit;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: #9b7840;
+}
+
+#home h1, #home p {
+    border-radius: 15px;
+}
+
+.button, button {
+    border-radius: 30px;
+}
+
+@media (max-width: 700px) {
+    .collection {
+        flex-direction: column;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    header {
+    flex-direction: column;
+    gap: 15px;}
+
+    nav a {
+    margin: 0 8px;
+    }
+}
